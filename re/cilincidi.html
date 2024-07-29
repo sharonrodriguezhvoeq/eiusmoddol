@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Attributes Example</title>
+</head>
+<body>
+    <div id="myElement"></div>
+
+    <script>
+        const el = document.getElementById('myElement');
+        const attr = {
+            'class': 'myClass',
+            'data-info': 'someData',
+            'title': 'My Tooltip'
+        };
+
+        Object.entries(attr).forEach(([key, value]) => {
+            el.setAttribute(key, value);
+        });
+    </script>
+</body>
+</html>
