@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Example</title>
+    <style>
+        #ak-play-bar-container {
+            width: 100%;
+            background-color: lightgray;
+            height: 30px;
+            position: relative;
+        }
+        #ak-play-bar {
+            height: 100%;
+            background-color: blue;
+            width: 50%; /* Initially set to 50% */
+        }
+    </style>
+</head>
+<body>
+    <div id="ak-play-bar-container">
+        <div id="ak-play-bar"></div>
+    </div>
+
+    <button onclick="resetProgressBar()">Reset Progress Bar</button>
+
+    <script>
+        function resetProgressBar() {
+            document.getElementById('ak-play-bar').style.width = '0px';
+        }
+    </script>
+</body>
+</html>
