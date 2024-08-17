@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Specific Attributes</title>
+</head>
+<body>
+    <div id="myElement">Hello, World!</div>
+    <button id="applyAttributes">Apply Attributes</button>
+
+    <script>
+        document.getElementById('applyAttributes').addEventListener('click', function() {
+            var elem = document.getElementById('myElement');
+            
+            // Apply specific attributes
+            elem.style.color = 'red';
+            elem.style.fontSize = '20px';
+            elem.setAttribute('data-custom-attribute', 'myValue');
+
+            console.log('Attributes applied.');
+        });
+    </script>
+</body>
+</html>
